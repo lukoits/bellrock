@@ -174,3 +174,6 @@ a:hover { text-decoration-thickness: 2px; }
 @media (max-width: 480px) {
   .legal .table-wrap { width: calc(100vw - 32px); }
 }
+
+.store .badge img { height: 56px; width: auto; }
+.store .badge-placeholder { cursor: default; }
