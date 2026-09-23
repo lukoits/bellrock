@@ -13,16 +13,16 @@ Static site for Bellrock games, served by GitHub Pages from `main` (custom domai
 | `/sports-dynasty-football/` | Sports Dynasty: Football — page, `privacy/`, `terms/`, `theme.css` |
 | `/assets/` | Shared CSS, Roboto variable font, Google Play badge, favicon |
 
-## Replacing placeholder images
+## Replacing images
 
 Keep the file name or update the `src`, `width` and `height` in the HTML.
 
 | File | Used for | Size |
 |---|---|---|
-| `art-master-quiz/img/card.svg` | Home page card | 1600 × 1000 (16:10) |
+| `art-master-quiz/img/card.webp` | Home page card | 1600 × 1000 (16:10) |
 | `art-master-quiz/img/hero.webp` | Game page image | any portrait, e.g. 1080 × 1350 |
-| `sports-dynasty-football/img/card.svg` | Home page card | 1600 × 1000 (16:10) |
-| `sports-dynasty-football/img/hero.svg` | Game page image | 1080 × 1350 (4:5) |
+| `sports-dynasty-football/img/card.webp` | Home page card | 1600 × 1000 (16:10) |
+| `sports-dynasty-football/img/hero.webp` | Game page image | 1080 × 1783 (transparent background) |
 
 ## Licenses
 
