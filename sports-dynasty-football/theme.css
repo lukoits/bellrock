@@ -1,0 +1,86 @@
+/* Sports Dynasty: Football — theme taken from the app (app/lib/core/theme/redesign.dart):
+   black background with a green header glow, #242424 cards, accent #66CA7B, condensed heavy Roboto. */
+
+@font-face {
+  font-family: "Roboto VF";
+  src: url("/assets/fonts/Roboto-VF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-display: swap;
+}
+
+:root {
+  --bg: #000000;
+  --surface: #242424;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.66);
+  --border: #313131;
+  --link: #ffffff;
+  --focus: #66ca7b;
+  --radius: 12px;
+  --accent: #66ca7b;
+  --logo-green: #55ba5c;
+  --font: "Roboto VF", Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  background: #000 linear-gradient(180deg, #002d00 0, #000 420px) no-repeat;
+}
+
+a { text-decoration-color: var(--accent); }
+
+.topbar { border-bottom-color: #1f1f1f; }
+.brand-app { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; font-weight: 800; font-stretch: 75%; text-transform: uppercase; letter-spacing: 0.01em; font-size: 18px; }
+.brand-app img { width: 32px; height: 32px; border-radius: 8px; }
+
+.eyebrow {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #135d18;
+  color: #7be58a;
+  font-weight: 700;
+  font-stretch: 87.5%;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.product h1 {
+  font-weight: 900;
+  font-stretch: 75%;
+  text-transform: uppercase;
+  font-size: clamp(44px, 7.5vw, 76px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+.product h1 .sub {
+  display: block;
+  text-transform: none;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-size: 0.52em;
+  letter-spacing: -0.01em;
+  color: var(--logo-green);
+  margin-top: 6px;
+}
+
+.lead { color: #fff; }
+
+.hero-media img { border-radius: 24px; border: 1px solid var(--border); }
+
+.store .soon {
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  background: #242424;
+  color: var(--muted);
+}
+
+.support { background: var(--surface); border-color: var(--border); }
+.support h2, .legal h2 { font-stretch: 87.5%; font-weight: 800; }
+
+.legal h1 { font-weight: 900; font-stretch: 75%; text-transform: uppercase; letter-spacing: -0.01em; }
+.legal .toc { background: #1a1a1a; }
+.legal table { background: #1a1a1a; }
+.legal th { background: #242424; }

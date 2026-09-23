@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Art Master preview (placeholder)">
+  <rect width="1600" height="1000" fill="#17A7DB"/>
+  <g fill="#21B6EC">
+    <path d="M800 500 L0 0 H400 Z"/><path d="M800 500 L800 0 H1200 Z"/><path d="M800 500 L1600 250 V650 Z"/>
+    <path d="M800 500 L1200 1000 H800 Z"/><path d="M800 500 L0 1000 V600 Z"/>
+  </g>
+  <rect x="560" y="260" width="480" height="480" rx="24" fill="#FFFFFF" stroke="#000" stroke-width="8"/>
+  <text x="800" y="590" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="300" font-weight="900" fill="#0B86B2">?</text>
+  <text x="800" y="940" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="34" fill="#FFFFFF">Placeholder · 1600 × 1000</text>
+</svg>

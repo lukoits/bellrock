@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-label="Sports Dynasty: Football screenshot (placeholder)">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#002D00"/><stop offset="0.35" stop-color="#000"/></linearGradient></defs>
+  <rect width="1080" height="1350" fill="url(#g)"/>
+  <rect x="60" y="360" width="960" height="260" rx="24" fill="#242424" stroke="#313131" stroke-width="3"/>
+  <text x="540" y="530" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="150" font-weight="800" fill="#FFFFFF">17 : 13</text>
+  <rect x="60" y="660" width="460" height="220" rx="24" fill="#242424" stroke="#313131" stroke-width="3"/>
+  <rect x="560" y="660" width="460" height="220" rx="24" fill="#242424" stroke="#313131" stroke-width="3"/>
+  <rect x="60" y="920" width="960" height="100" rx="50" fill="#135D18"/>
+  <text x="540" y="985" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF">ADVANCE WEEK</text>
+  <text x="540" y="1260" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="34" fill="#8a8a8a">Placeholder · 1080 × 1350</text>
+</svg>

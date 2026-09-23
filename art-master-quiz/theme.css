@@ -1,0 +1,66 @@
+/* Art Master: Art History Quiz — theme taken from the app (ui/theme/Color.kt, Type.kt):
+   white background, 2px black outlines with 8px corners, sky blue / green / orange, Roboto. */
+
+@font-face {
+  font-family: "Roboto VF";
+  src: url("/assets/fonts/Roboto-VF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-display: swap;
+}
+
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --text: #000000;
+  --muted: #5e5e5e;
+  --border: #000000;
+  --link: #000000;
+  --focus: #17a7db;
+  --radius: 8px;
+  --blue: #17a7db;
+  --green: #00bd00;
+  --orange: #db9d17;
+  --light-grey: #efefef;
+  --font: "Roboto VF", Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+body { font-size: 17px; }
+
+.topbar { border-bottom: 2px solid #000; }
+.brand-app { display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; color: #000; }
+.brand-app img { width: 32px; height: 32px; border-radius: 8px; border: 2px solid #000; }
+
+.site-footer { border-top: 2px solid #000; color: var(--muted); }
+
+a { text-decoration-color: var(--blue); text-decoration-thickness: 2px; }
+
+.eyebrow {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 2px solid #000;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #000;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.product h1 {
+  font-weight: 900;
+  font-size: clamp(38px, 6vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.product h1 .sub { display: block; font-weight: 700; font-size: 0.5em; letter-spacing: -0.01em; margin-top: 8px; color: #0b86b2; }
+
+/* hero.webp already includes the tilted outlined frame from the app's promo art */
+
+.support { border: 2px solid #000; background: #e8f6fb; }
+.support h2 { font-weight: 800; }
+
+.legal .toc { border: 2px solid #000; background: var(--light-grey); }
+.legal .table-wrap { border: 2px solid #000; }
+.legal th { background: var(--light-grey); }
+.legal h2 { font-weight: 800; }
