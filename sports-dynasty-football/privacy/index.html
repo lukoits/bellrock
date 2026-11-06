@@ -27,9 +27,9 @@
   <main id="main" class="wrap">
     <article class="legal">
 <h1>Privacy Policy — Sports Dynasty: Football</h1>
-<p class="meta">Last updated: September 23, 2026</p>
+<p class="meta">Last updated: November 6, 2026</p>
 
-<p>This Privacy Policy explains what information the mobile game <strong>Sports Dynasty: Football</strong> (Android package name <code>com.sportsdynasty.football</code>; shown on your device as “SD: Football”) collects, why, who receives it, and what choices and rights you have. It applies to the game as it is currently distributed on Google Play. In this policy, “we”, “us” and “our” mean the developer of the game (see <a href="#contact">Who we are and how to contact us</a>).</p>
+<p>This Privacy Policy explains what information the mobile game <strong>Sports Dynasty: Football</strong> (Android package name and iOS bundle ID <code>com.sportsdynasty.football</code>; shown on your device as “SD: Football”) collects, why, who receives it, and what choices and rights you have. It applies to the Android version distributed on Google Play and the iOS version distributed on the Apple App Store. Where the two versions differ, this policy says so. In this policy, “we”, “us” and “our” mean the developer of the game (see <a href="#contact">Who we are and how to contact us</a>).</p>
 
 <nav class="toc">
   <ul>
@@ -37,6 +37,7 @@
     <li><a href="#services-we-use">Third-party services we use</a></li>
     <li><a href="#information-on-your-device">Information stored only on your device</a></li>
     <li><a href="#analytics-and-crash-reports">Analytics and crash reports</a></li>
+    <li><a href="#feedback">In-game feedback</a></li>
     <li><a href="#how-we-use-information">How we use information</a></li>
     <li><a href="#legal-bases">Legal bases (GDPR)</a></li>
     <li><a href="#advertising">Advertising</a></li>
@@ -58,17 +59,17 @@
 <section id="summary">
   <h2>Summary</h2>
   <ul>
-    <li>The game is offline and single-player. There are no accounts, no sign-in, no cloud saves, no push notifications, and we do not run our own servers.</li>
+    <li>The game is single-player and is played offline. You do not create an account or sign in, there are no cloud saves and no push notifications, and we do not run our own servers.</li>
     <li>Your saved games, the name you type for your owner character, team names, imported logos and league files are stored <strong>only on your device</strong>. We do not receive them, except that the name of the team you manage is included in analytics events (see <a href="#analytics-and-crash-reports">Analytics and crash reports</a>).</li>
-    <li>The Android app uses Google services: <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong>, which start when the app launches; <strong>Google AdMob</strong> for ads, including Google’s consent tool (User Messaging Platform); and <strong>Google Play Billing</strong> for purchases.</li>
-    <li>Where the law requires it (for example in the EU/EEA, the UK and Switzerland), Google’s consent form asks whether ads may be personalized. Analytics and crash reporting are currently not controlled by that form.</li>
+    <li>Both versions use Google services: <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong>, which start when the app launches; <strong>Google AdMob</strong> for ads, including Google’s consent tool (User Messaging Platform); and, only if you choose to send in-game feedback, <strong>Firebase Authentication</strong> (anonymous) and <strong>Cloud Firestore</strong>. Purchases are processed by <strong>Google Play</strong> on Android and by the <strong>Apple App Store</strong> on iOS.</li>
+    <li>Where the law requires it (for example in the EU/EEA, the UK and Switzerland), Google’s consent form asks whether ads may be personalized. On iOS, the advertising identifier (IDFA) is used only if you allow tracking in Apple’s App Tracking Transparency prompt. Analytics and crash reporting are currently not controlled by these choices.</li>
     <li>We do not sell your personal data.</li>
   </ul>
 </section>
 
 <section id="services-we-use">
   <h2>Third-party services we use</h2>
-  <p>All of these services are currently active only in the Android version of the game. Retention periods are explained in more detail in <a href="#retention">How long we keep information</a>.</p>
+  <p>Retention periods are explained in more detail in <a href="#retention">How long we keep information</a>.</p>
 <div class="table-wrap"><table>
     <thead>
       <tr>
@@ -85,7 +86,7 @@
       <tr>
         <td>Google Analytics for Firebase</td>
         <td>Google (Google Ireland Limited in the EU/EEA; Google LLC elsewhere)</td>
-        <td>App instance ID; Android advertising ID; device model, OS version, language/locale; approximate location (country/region derived from IP address); automatic events (first open, sessions, screens, in-app purchases); game events listed below, including the name of your managed team and the Google Play order ID of purchases</td>
+        <td>App instance ID; on Android, the Android advertising ID; on iOS, the identifier for vendors (IDFV) and, only if you allow tracking, the IDFA; device model, OS version, language/locale; approximate location (country/region derived from IP address); automatic events (first open, sessions, screens, in-app purchases); game events listed below, including the name of your managed team and the store order or transaction ID of purchases</td>
         <td>From app launch, while you use the app</td>
         <td>Understanding how the game is played, measuring features, ads and purchases, improving the game</td>
         <td>Legitimate interests (Art. 6(1)(f))</td>
@@ -103,14 +104,23 @@
       <tr>
         <td>Google Mobile Ads (AdMob), including the User Messaging Platform (UMP)</td>
         <td>Google, and third-party ad partners participating in Google’s ad auctions</td>
-        <td>Android advertising ID; IP address; device and app information; ad requests, impressions, clicks and rewarded-ad completion; your consent choices</td>
+        <td>Advertising identifier (Android advertising ID; on iOS the IDFA only if you allow tracking, otherwise the IDFV); IP address; device and app information; ad requests, impressions, clicks and rewarded-ad completion; your consent choices</td>
         <td>When the app starts (consent check and ads SDK initialization) and when ads are requested and shown</td>
         <td>Showing interstitial and optional rewarded ads, measuring ads, preventing fraud; personalizing ads where permitted</td>
-        <td>Consent for personalized ads where required (collected via UMP); legitimate interests for non-personalized ads, ad measurement and fraud prevention</td>
+        <td>Consent for personalized ads where required (collected via UMP and, on iOS, App Tracking Transparency); legitimate interests for non-personalized ads, ad measurement and fraud prevention</td>
         <td>Per Google’s retention policies</td>
       </tr>
       <tr>
-        <td>Google Play Billing</td>
+        <td>Firebase Authentication (anonymous) and Cloud Firestore</td>
+        <td>Google</td>
+        <td>A random anonymous Firebase user ID; the feedback text you write; app version, platform (Android or iOS), game mode and the in-game season, week and phase; the time you sent it; whether a reward was granted and claimed. Google also processes your IP address to provide the service</td>
+        <td>Only if you choose to send feedback through the in-game feedback form, and when the game later checks or claims a feedback reward</td>
+        <td>Receiving and reading your feedback, improving the game, deciding on and delivering the in-game reward, allowing one feedback per player</td>
+        <td>Legitimate interests (Art. 6(1)(f)); performance of a contract (Art. 6(1)(b)) for delivering the reward</td>
+        <td>Up to 24 months after you send it (see <a href="#feedback">In-game feedback</a>)</td>
+      </tr>
+      <tr>
+        <td>Google Play Billing (Android)</td>
         <td>Google</td>
         <td>Purchase details (product, order ID, purchase token, time); payment details are handled by Google only</td>
         <td>When you make or restore a purchase</td>
@@ -118,10 +128,19 @@
         <td>Performance of a contract (Art. 6(1)(b))</td>
         <td>Per Google Play’s policies; a record of delivered purchases is kept on your device</td>
       </tr>
+      <tr>
+        <td>Apple App Store in-app purchases (iOS)</td>
+        <td>Apple</td>
+        <td>Purchase details (product, transaction ID, signed transaction, time); payment details are handled by Apple only</td>
+        <td>When you make or restore a purchase</td>
+        <td>Processing purchases and delivering items</td>
+        <td>Performance of a contract (Art. 6(1)(b))</td>
+        <td>Per Apple’s policies; a record of delivered purchases is kept on your device</td>
+      </tr>
     </tbody>
   </table></div>
-  <p>The game also uses standard system features that do not send data to us: the Android share sheet (to share an exported league file), the file picker (to choose a logo image or a league file to import), and links that open your browser or email app.</p>
-  <p>The game does <strong>not</strong> include any other analytics or attribution SDKs, social-network SDKs, or ad mediation networks, and it does not request location, camera, contacts or microphone permissions. The Android permissions it uses are internet access, network state, Google Play billing and the advertising ID permission.</p>
+  <p>The game also uses standard system features that do not send data to us: the system share sheet (to share an exported league file), the file picker (to choose a logo image or a league file to import), and links that open your browser or email app. If a league file you import contains logo web addresses, the game downloads those images directly from the addresses in the file; the server at that address receives your IP address like any web request, and we do not receive anything.</p>
+  <p>The game does <strong>not</strong> include any other analytics or attribution SDKs, social-network SDKs, or ad mediation networks, and it does not request location, camera, contacts, photos or microphone permissions. The Android permissions it uses are internet access, network state, Google Play billing and the advertising ID permission. On iOS, the only permission the game asks for is App Tracking Transparency.</p>
 </section>
 
 <section id="information-on-your-device">
@@ -130,22 +149,24 @@
   <ul>
     <li><strong>Saved games</strong>: the full game state, including the first and last name you type for your owner character, team names and cities you edit, and your game progress.</li>
     <li><strong>Imported content</strong>: custom team logo images (PNG/JPG) and league files (<code>.gmleague.json</code>) you choose to import. Copies are kept inside the app.</li>
-    <li><strong>Purchase and ad state</strong>: which premium items you own, ad counters, pending rewards and identifiers of purchases already delivered (used to avoid delivering the same purchase twice).</li>
+    <li><strong>Purchase, reward and ad state</strong>: which premium items you own, your Premium Points balance, ad counters, pending rewards and identifiers of purchases already delivered (used to avoid delivering the same purchase twice).</li>
+    <li><strong>Feedback state</strong>: whether the feedback form has been shown, whether you sent feedback, and the identifier of your feedback (used to check and claim a reward).</li>
     <li><strong>Settings</strong>: for example measurement units and which introductory screens you have already seen.</li>
   </ul>
-  <p><strong>Device backups.</strong> Android’s automatic backup is not disabled for this app, so, depending on your device settings, the app’s files may be included in your device backup stored in your Google account. Such backups are handled by Google under your agreement with Google, and we have no access to them.</p>
-  <p><strong>Exporting and sharing.</strong> If you export a league file, the game creates the file and opens the Android share sheet. The file goes only to the apps or people you choose. This is entirely your action; we do not receive a copy.</p>
-  <p><strong>Deleting local data.</strong> Uninstalling the game or clearing its data in Android settings deletes this information from your device. Copies in device backups or files you have exported or shared are not affected. Because there is no cloud save, deleted progress and in-game items cannot be restored by us (purchased premium unlocks can be restored via “Restore purchases” in the shop).</p>
+  <p><strong>Device backups.</strong> The app’s files may be included in your device backup depending on your device settings: on Android, Android’s automatic backup to your Google account; on iOS, iCloud Backup or a computer backup. Such backups are handled by Google or Apple under your agreement with them, and we have no access to them.</p>
+  <p><strong>Exporting and sharing.</strong> If you export a league file, the game creates the file and opens the system share sheet. The file goes only to the apps or people you choose. This is entirely your action; we do not receive a copy.</p>
+  <p><strong>Deleting local data.</strong> Uninstalling the game (or, on Android, clearing its data in settings) deletes this information from your device. Copies in device backups or files you have exported or shared are not affected. Because there is no cloud save, deleted progress and in-game items cannot be restored by us (purchased one-time items can be restored via “Restore purchases” in the shop).</p>
 </section>
 
 <section id="analytics-and-crash-reports">
   <h2>Analytics and crash reports</h2>
-  <p>Google Analytics for Firebase and Firebase Crashlytics start automatically when you open the Android app. They do not currently wait for, or depend on, the ad consent form, and the app does not currently offer a separate switch to turn them off. See <a href="#your-rights">Your rights</a> for how to object.</p>
+  <p>Google Analytics for Firebase and Firebase Crashlytics start automatically when you open the app. They do not currently wait for, or depend on, the ad consent form or the App Tracking Transparency prompt, and the app does not currently offer a separate switch to turn them off. See <a href="#your-rights">Your rights</a> for how to object.</p>
   <p>In addition to the information Google Analytics collects automatically, the game sends these events:</p>
   <ul>
-    <li><strong>Game progress</strong>: new game started (with the managed team, starting background, season, game mode and archetype), game loaded (season and team), game exited, phase, week and season advanced, franchise level up, owner fired (with the in-game reason), facility upgraded (facility type and level), stadium built (capacity tier), staff hired or fired (staff role). These events also carry in-game values such as the season, week and phase.</li>
-    <li><strong>Ads</strong>: ad requested, loaded, failed, shown or not ready (with the ad slot and, for failures, the ad error code); interstitial shown (placement); rewarded ad watched (placement and whether it was watched to the end).</li>
-    <li><strong>Purchases</strong>: purchase completed (product ID and <strong>Google Play order ID</strong>) and purchase rejected by the app’s local receipt check (product ID and the rejection reason).</li>
+    <li><strong>Game progress</strong>: new game started (with the managed team, starting background, season, game mode and archetype), game loaded (season and team), game exited, first match started and match finished, free agency finished, phase, week and season advanced, franchise level up, owner fired (with the in-game reason) and the option chosen afterwards (for example continuing, sandbox mode or a rescue loan), facility upgraded (facility type and level), stadium built (capacity tier), staff hired or fired (staff role), Game Pass rewards claimed, Premium Points spent or refunded in the game, and tips shown or dismissed. These events also carry in-game values such as the season, week and phase.</li>
+    <li><strong>Ads and offers</strong>: an ad not being ready when it should be shown (with the ad slot); interstitial shown (placement); rewarded ad watched (placement and whether it was watched to the end); a limited-time offer shown automatically.</li>
+    <li><strong>Purchases</strong>: purchase completed (product ID and the store’s <strong>order or transaction ID</strong> — the Google Play order ID on Android, the App Store transaction ID on iOS); purchase failed or canceled (product ID, status, the store’s error code and message, and whether it happened while restoring); purchase rejected by the app’s local check (product ID and the rejection reason).</li>
+    <li><strong>Feedback</strong>: feedback form shown, closed, sent and reward claimed. The text of your feedback is <strong>not</strong> sent to Analytics.</li>
     <li><strong>Screens</strong>: which screens are viewed.</li>
     <li><strong>User properties</strong>: current season, franchise level, and whether you own Premium.</li>
   </ul>
@@ -153,11 +174,19 @@
   <p>The owner name you type, save slot names, logos and league files are <strong>not</strong> sent. We do not set a user ID in Analytics or Crashlytics and we do not attach custom identifiers to crash reports.</p>
 </section>
 
+<section id="feedback">
+  <h2>In-game feedback</h2>
+  <p>After a season the game may ask what you think of it. Answering is <strong>optional</strong>. If you send feedback, the game signs in to Firebase Authentication <strong>anonymously</strong> — no name, email, phone number or store account is used — and stores your text in Cloud Firestore together with the anonymous user ID and the details listed in the table above. We read the feedback in the Firebase console and may grant an in-game reward of Premium Points for useful feedback; the game then checks whether a reward was granted and lets you claim it. Each player can send feedback once.</p>
+  <p><strong>Please do not include personal information</strong> (such as your name, email address or phone number) in your feedback. If you want a reply, email us instead (see <a href="#contact">Who we are and how to contact us</a>).</p>
+  <p>Feedback is stored in Google’s Firestore multi-region location in the United States. We keep it for up to 24 months after you send it and then delete it, unless you ask us to delete it sooner. Because the user ID is anonymous, to find your feedback we may ask you for the approximate date you sent it and its text.</p>
+</section>
+
 <section id="how-we-use-information">
   <h2>How we use information</h2>
   <ul>
     <li>To run the game and deliver the items you buy or earn.</li>
     <li>To understand how players use the game (for example which features are used and where players stop) and to improve game design and balance.</li>
+    <li>To read your feedback and reward useful feedback.</li>
     <li>To detect, diagnose and fix crashes and bugs.</li>
     <li>To show ads, measure their performance and, where permitted, personalize them.</li>
     <li>To verify purchases, prevent abuse and handle refund or purchase questions.</li>
@@ -172,7 +201,8 @@
   <p>If you are in the EU/EEA, the UK or Switzerland, we rely on the following legal bases:</p>
   <ul>
     <li><strong>Analytics and crash reporting</strong> — our <strong>legitimate interests</strong> in improving and stabilizing the game (Art. 6(1)(f) GDPR). These services currently run from launch and are not governed by the consent form. You have the right to object at any time (see <a href="#your-rights">Your rights</a>).</li>
-    <li><strong>Personalized advertising</strong> — your <strong>consent</strong> (Art. 6(1)(a)), collected through Google’s User Messaging Platform where required. If you do not consent, you may still see non-personalized ads.</li>
+    <li><strong>In-game feedback</strong> — our <strong>legitimate interests</strong> in learning what players think and improving the game (Art. 6(1)(f)); delivering a feedback reward is <strong>performance of a contract</strong> (Art. 6(1)(b)). Sending feedback is always your choice.</li>
+    <li><strong>Personalized advertising</strong> — your <strong>consent</strong> (Art. 6(1)(a)), collected through Google’s User Messaging Platform where required and, on iOS, through Apple’s App Tracking Transparency prompt. If you do not consent, you may still see non-personalized ads.</li>
     <li><strong>Non-personalized ads, ad measurement and fraud prevention</strong> — our legitimate interest in funding the free game through ads, and Google’s own legal bases as described in its policies. Where local law requires consent for storing or accessing information on your device for these purposes, the consent form covers this.</li>
     <li><strong>Purchases</strong> — <strong>performance of a contract</strong> with you (Art. 6(1)(b)).</li>
     <li><strong>Support emails</strong> — our legitimate interest in answering you, or steps taken at your request.</li>
@@ -184,15 +214,16 @@
   <h2>Advertising</h2>
   <p>The game is free to play and shows ads through Google AdMob:</p>
   <ul>
-    <li><strong>Interstitial ads</strong> (full-screen) at a few points in each season — at most three per season (for example at the start of the season, mid-season and before the playoffs).</li>
-    <li><strong>Rewarded ads</strong>, which you choose to watch in exchange for an in-game reward (such as an in-game cash bonus or a stadium restyle). The reward is given only after the ad is completed. Rewarded ads remain available if you own Premium.</li>
+    <li><strong>Interstitial ads</strong> (full-screen) at a few fixed points in each season — at most four per season (at the start of the regular season, mid-season, before the playoffs and, if your season ends without a title run, at the end of the season).</li>
+    <li><strong>Rewarded ads</strong>, which you choose to watch in exchange for an in-game reward (such as Premium Points, a stadium restyle or a rescue loan). The reward is given only after the ad is completed. Rewarded ads remain available if you own Premium.</li>
   </ul>
-  <p>Buying a <strong>Premium</strong> item removes interstitial ads. The game does not show banner, app-open or native ads.</p>
-  <p><strong>Consent.</strong> When the app starts, Google’s User Messaging Platform checks whether a consent form is required in your region and, if so, shows it. Ads are only loaded once Google’s tool reports that ads can be requested. Whether ads are <strong>personalized</strong> (based on your advertising ID and interests) or <strong>non-personalized</strong> (based on context such as the app and general location) is decided by your choices in that form. Non-personalized ads still use identifiers and device data for frequency capping, aggregated reporting and fraud prevention.</p>
+  <p>Buying <strong>Premium</strong> removes interstitial ads. The game does not show banner, app-open or native ads.</p>
+  <p><strong>Consent.</strong> When the app starts, Google’s User Messaging Platform checks whether a consent form is required in your region and, if so, shows it. On iOS, the game then shows Apple’s App Tracking Transparency prompt. Ads are only loaded once Google’s tool reports that ads can be requested. Whether ads are <strong>personalized</strong> (based on your advertising ID and interests) or <strong>non-personalized</strong> (based on context such as the app and general location) is decided by your choices. Non-personalized ads still use identifiers and device data for frequency capping, aggregated reporting and fraud prevention.</p>
   <p>The app does not currently include a button to reopen the consent form. To change your choices you can:</p>
   <ul>
-    <li><strong>Reset or delete your advertising ID</strong>: on most Android devices, open <em>Settings → Privacy → Ads</em> (or <em>Settings → Google → Ads</em>) and choose “Reset advertising ID” or “Delete advertising ID”. On older Android versions you can choose “Opt out of Ads Personalization”. Menu names vary by device and Android version.</li>
-    <li><strong>Clear the app’s data</strong> in Android settings, which also clears the stored consent choices so the form can be shown again where required. Note that this also deletes your saved games.</li>
+    <li><strong>On Android, reset or delete your advertising ID</strong>: on most devices, open <em>Settings → Privacy → Ads</em> (or <em>Settings → Google → Ads</em>) and choose “Reset advertising ID” or “Delete advertising ID”. On older Android versions you can choose “Opt out of Ads Personalization”. Menu names vary by device and Android version.</li>
+    <li><strong>On iOS, turn tracking off or on</strong> for the game at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+    <li><strong>Clear the app’s data</strong> (Android) or reinstall the game (iOS), which also clears the stored consent choices so the form can be shown again where required. Note that this also deletes your saved games.</li>
     <li><strong>Contact us</strong> (see <a href="#contact">Who we are and how to contact us</a>) with any question or objection.</li>
   </ul>
   <p>Ads may be served by Google and by third-party ad partners in Google’s auctions. Google explains how it uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>, and its privacy policy is at <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>. You can also manage ad settings in your Google account at <a href="https://myadcenter.google.com/">https://myadcenter.google.com/</a>.</p>
@@ -200,15 +231,16 @@
 
 <section id="purchases">
   <h2>Purchases</h2>
-  <p>In-app purchases are processed by <strong>Google Play Billing</strong>. We never see or receive your card or other payment details; Google handles payment under its own terms and privacy policy.</p>
-  <p>When you buy something, Google Play returns purchase information (such as the product, order ID and a signed purchase receipt) to the app. The app checks the receipt’s signature <strong>locally on your device</strong> — we have no server that receives your purchases — and then delivers the item and stores a record of delivered purchases on your device. The product ID and order ID are also sent to Google Analytics (see <a href="#analytics-and-crash-reports">Analytics and crash reports</a>).</p>
-  <p>If you contact us about a purchase, we may ask for the order ID to help you. Refunds follow Google Play’s refund policy, without prejudice to your mandatory consumer rights.</p>
+  <p>In-app purchases are processed by <strong>Google Play Billing</strong> on Android and by the <strong>Apple App Store</strong> on iOS. We never see or receive your card or other payment details; Google or Apple handles payment under its own terms and privacy policy.</p>
+  <p>When you buy something, the store returns purchase information (such as the product, the order or transaction ID and a signed receipt or signed transaction) to the app. The app checks the signature <strong>locally on your device</strong> — we have no server that receives your purchases — and then delivers the item and stores a record of delivered purchases on your device. The product ID and order or transaction ID are also sent to Google Analytics (see <a href="#analytics-and-crash-reports">Analytics and crash reports</a>).</p>
+  <p>If you contact us about a purchase, we may ask for the order or transaction ID to help you. Refunds follow the refund policy of the store you bought from, without prejudice to your mandatory consumer rights.</p>
 </section>
 
 <section id="sharing">
   <h2>Who receives your information</h2>
   <ul>
-    <li><strong>Google</strong> (Firebase Analytics, Crashlytics, AdMob, User Messaging Platform, Google Play). For Firebase, Google acts as our processor; for advertising and Google Play, Google may act as an independent controller. See <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+    <li><strong>Google</strong> (Firebase Analytics, Crashlytics, Firebase Authentication, Cloud Firestore, AdMob, User Messaging Platform, Google Play). For Firebase, Google acts as our processor; for advertising and Google Play, Google may act as an independent controller. See <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+    <li><strong>Apple</strong>, for App Store purchases and the App Tracking Transparency setting on iOS. See <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>.</li>
     <li><strong>Third-party ad partners</strong> that take part in Google’s ad auctions, subject to your consent choices where required.</li>
     <li><strong>Authorities or other parties</strong> where required by law, or to protect our rights, users or others.</li>
     <li>A successor, if the game is transferred to another developer or publisher; we would inform you of such a change.</li>
@@ -218,7 +250,7 @@
 
 <section id="international-transfers">
   <h2>International transfers</h2>
-  <p>Google processes data in the United States and other countries outside the EU/EEA. For such transfers Google relies on the EU–U.S. Data Privacy Framework and/or the European Commission’s Standard Contractual Clauses. You can contact us for more information about these safeguards.</p>
+  <p>Google and Apple process data in the United States and other countries outside the EU/EEA; feedback is stored in Google’s data centers in the United States. For such transfers Google relies on the EU–U.S. Data Privacy Framework and/or the European Commission’s Standard Contractual Clauses. You can contact us for more information about these safeguards.</p>
 </section>
 
 <section id="retention">
@@ -226,8 +258,9 @@
   <ul>
     <li><strong>Google Analytics event data</strong>: kept according to our Analytics data retention setting, for a maximum of 14 months; aggregated reports that do not identify you may be kept longer.</li>
     <li><strong>Crashlytics crash data</strong>: about 90 days.</li>
+    <li><strong>Feedback</strong>: up to 24 months after you send it, then deleted (sooner on request).</li>
     <li><strong>Advertising data</strong>: according to Google’s retention policies.</li>
-    <li><strong>Purchase records</strong>: kept by Google Play according to its policies; the record of delivered purchases on your device stays until the app’s data is deleted.</li>
+    <li><strong>Purchase records</strong>: kept by Google Play or Apple according to their policies; the record of delivered purchases on your device stays until the app’s data is deleted.</li>
     <li><strong>Support emails</strong>: as long as needed to handle your request, and up to 2 years afterwards, unless a longer period is required by law or to establish or defend legal claims.</li>
     <li><strong>Local game data</strong>: on your device until you uninstall the game or clear its data (see backups caveat above).</li>
   </ul>
@@ -245,8 +278,8 @@
     <li><strong>object</strong> to processing based on legitimate interests, including analytics and crash reporting;</li>
     <li>withdraw consent at any time (for personalized ads), without affecting processing carried out before withdrawal.</li>
   </ul>
-  <p><strong>How to exercise your rights.</strong> Email us (see <a href="#contact">Who we are and how to contact us</a>). Because we do not use accounts or user IDs, we usually cannot link analytics or crash data to you by name. To help us find data relating to your device, you may be asked for information such as the approximate date and time of your activity or a purchase order ID. An objection to analytics or crash reporting cannot currently be applied inside the app (there is no switch to turn these services off); the only way to stop this collection completely is to stop using and uninstall the game. We will respond within one month, which may be extended where permitted by law. You can also act directly: reset or delete your advertising ID, clear the app’s data, or uninstall the game.</p>
-  <p><strong>Is providing data required?</strong> You are not required by law or by contract to provide personal data. The Android app collects the analytics, crash and advertising data described above automatically while you use it; if you do not want this, do not use the game. Declining personalized ads in the consent form does not stop you from playing.</p>
+  <p><strong>How to exercise your rights.</strong> Email us (see <a href="#contact">Who we are and how to contact us</a>). Because we do not use accounts and identify players only by random IDs, we usually cannot link analytics, crash or feedback data to you by name. To help us find data relating to your device, you may be asked for information such as the approximate date and time of your activity, a purchase order or transaction ID, or the text of feedback you sent. An objection to analytics or crash reporting cannot currently be applied inside the app (there is no switch to turn these services off); the only way to stop this collection completely is to stop using and uninstall the game. We will respond within one month, which may be extended where permitted by law. You can also act directly: reset or delete your advertising ID (Android), turn off tracking (iOS), clear the app’s data, or uninstall the game.</p>
+  <p><strong>Is providing data required?</strong> You are not required by law or by contract to provide personal data. The app collects the analytics, crash and advertising data described above automatically while you use it; if you do not want this, do not use the game. Declining personalized ads or tracking does not stop you from playing, and sending feedback is always optional.</p>
   <p><strong>Complaints.</strong> If you are unhappy with how we handle your data, please write to us first — we will try to sort it out. You also have the right to lodge a complaint with a data protection authority.</p>
 </section>
 
@@ -257,29 +290,30 @@
 
 <section id="california-us">
   <h2>California and other US states</h2>
-  <p>In the past 12 months the game has collected the following categories of personal information, as described above: identifiers (advertising ID, app instance and installation IDs, IP address), internet or other electronic activity (in-game events, ad interactions), commercial information (purchases), approximate geolocation derived from IP address, and device information. We do not collect sensitive personal information. Sources are your device and your use of the game. Purposes are listed in <a href="#how-we-use-information">How we use information</a>.</p>
-  <p>We do not sell personal information. Using personalized advertising may count as “sharing” for cross-context behavioral advertising under California law. You can opt out by deleting or resetting your advertising ID or opting out of ads personalization in your Android settings, and, where the consent form is shown, through your choices in it. You have the right to know, access, correct and delete personal information, and not to be discriminated against for exercising these rights. To make a request, email us. We do not knowingly sell or share personal information of consumers under 16.</p>
+  <p>In the past 12 months the game has collected the following categories of personal information, as described above: identifiers (advertising ID or IDFA, IDFV, app instance and installation IDs, anonymous Firebase user ID, IP address), internet or other electronic activity (in-game events, ad interactions), commercial information (purchases), approximate geolocation derived from IP address, device information, and feedback text you choose to send. We do not collect sensitive personal information. Sources are your device and your use of the game. Purposes are listed in <a href="#how-we-use-information">How we use information</a>.</p>
+  <p>We do not sell personal information. Using personalized advertising may count as “sharing” for cross-context behavioral advertising under California law. You can opt out by deleting or resetting your advertising ID or opting out of ads personalization in your Android settings, by turning off tracking for the game on iOS, and, where the consent form is shown, through your choices in it. You have the right to know, access, correct and delete personal information, and not to be discriminated against for exercising these rights. To make a request, email us. We do not knowingly sell or share personal information of consumers under 16.</p>
 </section>
 
 <section id="security">
   <h2>Security</h2>
-  <p>Data sent to Google services is encrypted in transit (HTTPS/TLS). We do not operate our own servers, and your game data stays in the app’s private storage on your device. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+  <p>Data sent to Google and Apple services is encrypted in transit (HTTPS/TLS). We do not operate our own servers: your game data stays in the app’s private storage on your device, and feedback is stored in Cloud Firestore, operated by Google, with access rules that let the game only create one feedback entry per anonymous ID and read and claim its own reward. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
 </section>
 
 <section id="ios-version">
   <h2>If you use the iOS version</h2>
-  <p>An iOS version of the game is planned but is not available at the time of this update. If and when it is released, the following will apply in addition to the rest of this policy:</p>
+  <p>The iOS version works like the Android version described above, with these differences:</p>
   <ul>
-    <li><strong>Purchases</strong> will be processed by Apple through the App Store. We will not receive your payment details; Apple’s terms and privacy policy apply (<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>).</li>
-    <li><strong>Advertising</strong>: the Identifier for Advertisers (IDFA) will be used only if you allow tracking in Apple’s App Tracking Transparency prompt. If you do not, ads will be shown without the IDFA, and ad attribution may use Apple’s SKAdNetwork, which does not identify you. You can change this at any time in iOS <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
-    <li><strong>Analytics and crash reporting</strong> will use Firebase with the identifier for vendors (IDFV) and the Firebase app instance ID, not the IDFA unless you allow tracking.</li>
-    <li><strong>Backups</strong>: your local saves may be included in iCloud or device backups according to your iOS settings.</li>
+    <li><strong>Purchases</strong> are processed by Apple through the App Store. We do not receive your payment details; Apple’s terms and privacy policy apply (<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>). Refunds are requested from Apple at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</li>
+    <li><strong>Advertising</strong>: the Identifier for Advertisers (IDFA) is used only if you allow tracking in Apple’s App Tracking Transparency prompt. If you do not, ads are shown without the IDFA, and ad attribution may use Apple’s SKAdNetwork, which does not identify you. You can change this at any time in iOS <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+    <li><strong>Analytics and crash reporting</strong> use Firebase with the identifier for vendors (IDFV) and the Firebase app instance ID; the IDFA is used only if you allow tracking.</li>
+    <li><strong>Backups</strong>: your local saves may be included in iCloud or computer backups according to your iOS settings.</li>
   </ul>
 </section>
 
 <section id="changes">
   <h2>Changes to this policy</h2>
   <p>We may update this policy when the game or the law changes. We will change the “Last updated” date at the top, and we will highlight material changes on this page and, where appropriate, in the game.</p>
+  <p><strong>November 6, 2026:</strong> added the iOS version, the optional in-game feedback form (Firebase Authentication and Cloud Firestore), updated the list of analytics events and the number of ad breaks per season.</p>
 </section>
 
 <section id="contact">
