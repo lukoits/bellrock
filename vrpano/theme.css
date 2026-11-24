@@ -1,0 +1,48 @@
+/* VRPano — theme taken from the app: dark graphite background (#1C1F24), white text, orange accent.
+   No app art yet, so the product page is text-only and the shared favicon is used. */
+
+:root {
+  --bg: #121418;
+  --surface: #1c1f24;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.66);
+  --border: #2c3037;
+  --link: #ffffff;
+  --focus: #ff9f0a;
+  --radius: 12px;
+  --accent: #ff9f0a;
+  --font: system-ui, -apple-system, "SF Pro Text", "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: dark;
+}
+
+a { text-decoration-color: var(--accent); }
+
+.topbar { border-bottom-color: #23262c; }
+.brand-app { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
+.brand-app img { width: 28px; height: 28px; }
+
+.eyebrow {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 159, 10, 0.16);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.product .hero { grid-template-columns: minmax(0, 1fr); max-width: 680px; padding-bottom: 0; }
+.product h1 { font-weight: 800; font-size: clamp(44px, 7vw, 68px); line-height: 1; letter-spacing: -0.03em; }
+.product h1 .sub { display: block; font-weight: 600; font-size: 0.42em; letter-spacing: -0.01em; color: var(--accent); margin-top: 10px; }
+
+.lead { color: #fff; }
+.store .soon { padding: 10px 16px; border: 1px solid var(--border); border-radius: 32px; background: var(--surface); }
+
+.support { max-width: 680px; }
+.support h2, .legal h2 { font-weight: 700; }
+
+.legal h1 { font-weight: 800; letter-spacing: -0.02em; }
+.legal .toc { background: var(--surface); }
+.legal table { background: var(--surface); }
+.legal th { background: #262a31; }
