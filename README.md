@@ -12,7 +12,8 @@ Static site for Bellrock games, served by GitHub Pages from `main` (custom domai
 | `/art-master-quiz/` | Art Master: Art History Quiz — page, `privacy/`, `terms/`, `theme.css` |
 | `/sports-dynasty-football/` | Sports Dynasty: Football — page, `privacy/`, `terms/`, `theme.css` |
 | `/sports-dynasty-college-football/` | Sports Dynasty: College Football — page, `privacy/`, `terms/`, `theme.css` |
-| `/vrpano/` | VRPano (iOS) — page, `privacy/`, `terms/`, `theme.css` (unlisted: not linked from the home page, not in `sitemap.xml`; no app art yet, uses the shared favicon) |
+| `/stereorama/` | Stereorama: 360° 3D VR Camera (iOS) — page, `privacy/`, `terms/`, `theme.css` (unlisted: not linked from the home page, not in `sitemap.xml`; no app art yet, uses the shared favicon) |
+| `/vrpano/` | Redirects to `/stereorama/` (the app's former name; links in installed builds still point here) |
 | `/assets/` | Shared CSS, Roboto variable font, Google Play badge, favicon |
 
 ## Replacing images
